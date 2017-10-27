@@ -13,7 +13,7 @@
 
 * Склонировать данный репозиторий
 
-> git clone https://github.com/borovoy-aa/new-landing.git
+> git clone https://github.com/borovoy-aa/goodgood.git
 
 * Запустить команду npm install в терминале. Данная команда установит все пакеты, которые указанны в файле
 packege.json, а также   все их зависимости
