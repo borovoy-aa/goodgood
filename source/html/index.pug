@@ -1,0 +1,185 @@
+extends ../layouts/page.pug
+
+block title
+  title New-landing
+
+block content
+  #fullpage
+    section.section.active.section-home
+      .container
+        .row
+          .col-md-2
+            .sidebar#left-sidebar
+              ul#menu.side-list
+                li.list-tab.active(data-menuanchor="firstPage")
+                  a(href="#firstPage") 01
+                    span Home
+                li.list-tab(data-menuanchor="secondPage")
+                  a(href="#secondPage") 02
+                    span Works
+                li.list-tab(data-menuanchor="3rdPage")
+                  a(href="#3rdPage") 03
+                    span About
+                li.list-tab(data-menuanchor="4thPage")
+                  a(href="#4thPage") 04
+                    span Contact
+                li.list-tab(data-menuanchor="5thPage")
+                  a(href="#5thPage") 05
+                    span Hire us
+          .col-md-10
+            .home-content
+              .row
+                .col-md-6
+                  h1 Your next interactive experience
+                  .col-md-3
+                    button.main-btn
+                      span hire us
+                      i.fa.fa-long-arrow-right(aria-hidden='true')
+                .col-md-6
+                  img(src="../images/home-img.png", alt="")
+            .home-info
+              .row
+                .col-md-4
+                  .info-block
+                    h5 Metiew & Smith
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. A, et?
+                .col-md-4
+                  .info-block
+                    h5 Fantasy interactive
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. At, rerum!
+                .col-md-4
+                  .info-block
+                    h5 Paul & shark
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, a!
+
+    section.section.section-works.work
+        .container
+          .row
+            .col-md-9.col-md-offset-2
+              h2 Selected work
+              .work--lockup
+                ul.slider
+                  li.slider--item.slider--item-left
+                    a(href="#0")
+                      .slider--item-image
+                        img(src="../images/slide-1.jpg", alt="Victory")
+                      |                       
+                      p.slider--item-title Victory
+                      |                       
+                      p.slider--item-description Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.
+                  |                   
+                  li.slider--item.slider--item-center
+                    a(href="#0")
+                      .slider--item-image
+                        img(src="../images/slide-2.jpg", alt="Metiew and Smith")
+                      |                       
+                      p.slider--item-title Metiew & Smith
+                      |                       
+                      p.slider--item-description Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.
+                  |                   
+                  li.slider--item.slider--item-right
+                    a(href="#0")
+                      .slider--item-image
+                        img(src="../images/slide-3.jpg", alt="Alex Nowak")
+                      |                       
+                      p.slider--item-title Alex Nowak
+                      |                       
+                      p.slider--item-description Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.
+                |                 
+                .slider--prev
+                  svg#Layer_1(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", viewbox="0 0 150 118", style="enable-background:new 0 0 150 118;", xml:space="preserve")
+                    g(transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)")
+                      path(d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29\
+                      c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180\
+                      c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z")
+                |                 
+                .slider--next
+                  svg#Layer_1(version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", viewbox="0 0 150 118", style="enable-background:new 0 0 150 118;", xml:space="preserve")
+                    g(transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)")
+                      path(d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z")
+    
+    section.section.section-about.about
+        .container
+          .row
+            .col-md-10.col-md-offset-2
+              .row
+                .col-md-6
+                  h1 We believe in passionate people
+                  a(href="#") career
+                    i.fa.fa-long-arrow-right(aria-hidden='true')
+                .col-md-6
+                  img(src="../images/about-img.png", alt="")
+              .row
+                .col-md-12
+                  a(href="")
+                    .link-block.winners
+                      img(src="../images/about-1.jpg", alt="")
+                    span winners
+                  a(href="")
+                    .link-block.philosophy
+                      img(src="../images/about-2.jpg", alt="")
+                    span philosophy
+                  a(href="")
+                    .link-block.history
+                      img(src="../images/about-3.jpg", alt="")
+                    span history
+
+    section.section.section-contact
+      .contact
+        .container
+          .row
+            .col-md-7.col-md-offset-5
+              .contact--form
+                p Pawia 5,31-154 Krakow, Poland
+                p ouremail@gmail.com
+                p +48 12 628 75 60
+                button.contact-btn.behance Behance
+                button.contact-btn.dribble Dribble
+                button.contact-btn.contact-us CONTACT US
+
+    section.section.section-hire_us
+      .container
+        .row
+          .col-md-10.col-md-offset-1
+            h2 You want us to do
+            .section-hire_us__direction
+              label.check
+                input(type='checkbox')
+                .box
+                  | App Design
+              label.check
+                input(type='checkbox')
+                .box
+                  | Graphic Design
+              label.check
+                input(type='checkbox')
+                .box
+                  | Motion Design
+
+            .section-hire_us__direction
+              label.check
+                input(type='checkbox')
+                .box
+                  | UX Design
+              label.check
+                input(type='checkbox')
+                .box
+                  | Webdesign
+
+            .section-hire_us__direction
+              label.check
+                input(type='checkbox')
+                .box
+                  | Marketing
+
+            .section-hire_us__direction
+              form.form.form--request(action='', method='POST', name=' application ')
+                input.input.input--transparent(name='name', maxlength='20', placeholder='Name', required='')
+                input.input.input--transparent(name='email', type='email', maxlength='20', placeholder='Email', required='')
+                button.button.button--blue(type='submit', form='application') send request
+              
+
+
+
+        
+block scripts

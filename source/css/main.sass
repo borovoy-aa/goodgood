@@ -1,0 +1,484 @@
+body
+  height: 100%
+.fp-tableCell
+  vertical-align: baseline !important
+.button
+  margin: 0
+  padding: 0
+  outline: none
+  border: none
+  &--blue
+    width: 400px
+    height: 50px
+    background-color: #0f33ff
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 700
+   
+.check
+  height: 52px
+  width: 200px
+  
+  input
+    display: none
+    &:checked + .box
+      background-color: #0f33ff
+      border-color: #0f33ff
+      padding: 12px 0 0 25px
+      &:after
+        content: ""
+        background-image: url(../images/btn-img.png)
+        position: absolute
+        width: 20px
+        height: 15px
+        top: 35%
+        left: 10%
+  .box
+    width: 100%
+    height: 100%
+    transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1)
+    border: 2px solid #fff
+    background-color: transparent
+    position: relative
+    overflow: hidden
+    cursor: pointer
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2)
+    text-align: center
+    padding: 12px
+      
+      
+section
+  background-color: #0b0b0c
+h1
+  font-size: 82px
+  color: #ffffff
+  font-weight: 900
+h2
+  font-size: 30px
+  font-weight: bold
+  color: #ffffff
+  text-align: center
+header 
+  position: fixed
+  height: 70px
+  display: block
+  width: 100%
+  z-index: 9
+  text-align: center
+  color: #f2f2f2
+  padding: 20px
+  top: 0
+.header-sub
+  height: 70px
+  width: 100%
+  background-color: #0b0b0c
+.header-block
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  
+  .header-btn
+    border: none
+    background: none
+    outline: none
+
+.section-home
+  height: 87vh
+  .home-content
+    border-bottom: 1px solid #151515
+    img
+      transform: translateX(-10%)
+      position: relative
+      bottom: -2px
+    
+    .main-btn
+      margin-top: 30px
+      float: right
+      border: none
+      outline: none
+      background-color: #0f33ff
+      width: 90px
+      height: 30px
+      padding-left: 55px
+      font-size: 14px
+      color: #ffffff
+      font-weight: bold
+      text-transform: uppercase
+      transition: All 0.5s ease
+      &:hover
+        width: 120px
+        padding-left: 80px
+      span
+        position: absolute
+        left: -5px
+      i
+        font-size: 22px
+  .home-info
+    margin-top: 30px
+    .info-block
+      padding: 0 0 0 20px
+      color: #252525
+      &:hover
+        color: #ffffff
+        cursor: pointer
+      h5
+        font-weight: bold
+        font-size: 18px
+        text-transform: uppercase
+
+      p
+        font-size: 16px
+
+.sidebar
+  height: 87vh
+  position: fixed
+  margin-left: 60px
+  width: 100px
+  left: 0
+  top: 8%
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 0
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+    width: 2px
+    height: 90%
+    max-height: 750px
+    background-color: #555
+    opacity: .35
+    z-index: 10
+.side-list
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  padding: 14px
+  margin: 0
+  a
+    color: #ffffff
+    text-decoration: none
+.side-list span
+  opacity: 0
+  cursor: pointer
+  position: absolute
+
+.side-list a
+  cursor: pointer
+  position: absolute
+  left: 10px
+  color: #555
+  font-size: 14px
+  font-weight: 300
+.side-list li.active a
+  left: -25px
+  color: #fff
+.side-list li.active span
+  left: 40px
+  color: #fff
+
+.side-list li.active
+  color: #0f33ff
+  transition: color .4s ease-in-out
+.side-list li.active span
+  opacity: 1
+  transition: opacity .4s ease-in-out
+
+
+.work
+  margin: 0 auto
+  h2
+    font-size: 30px
+    font-weight: bold
+    color: #ffffff
+    text-align: center
+
+  &--lockup
+      position: relative
+
+      .slider
+        position: relative
+        display: flex
+        width: 80%
+        margin: 0 auto
+        padding: 0
+        list-style: none
+
+        &--item
+          position: absolute
+          display: none
+          text-align: center
+
+          a
+            text-decoration: none
+            color: #858585
+
+          &-title
+            margin-top: 10px
+            font-size: 12px
+            font-weight: 700
+            text-transform: uppercase
+
+          &-description
+            display: none
+            max-width: 250px
+            margin: 0 auto
+
+          &-image
+            width: 150px
+            height: 150px
+            margin: 0 auto
+            border-radius: 50%
+            overflow: hidden
+
+            img
+              width: 100%
+
+          &-left
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            display: block
+
+          &-right
+            top: 50%
+            right: 0
+            transform: translateY(-50%)
+            display: block
+
+          &-center
+            position: relative
+            top: 30px
+            left: 50%
+            transform: translateX(-50%)
+            display: block
+
+            a
+              color: #fff
+
+            .slider--item-title
+              margin-top: 25px
+              font-size: 16px
+
+            .slider--item-description
+              display: block
+
+            .slider--item-image
+              width: 300px
+              height: 300px
+
+      .slider--next,
+      .slider--prev
+        position: absolute
+        top: 160px
+        display: flex
+        width: 50px
+        height: 50px
+        align-items: center
+        justify-content: center
+        background-color: #ccc
+        border-radius: 50%
+        cursor: pointer
+
+        svg
+          width: 20px
+          fill: #fff
+
+      .slider--next
+        right: 0
+
+      .slider--prev
+        left: 0
+
+  @media (max-width: 900px)
+
+    .work
+
+      &--lockup
+
+        .slider
+
+          &--item
+
+            &-image
+              width: 120px
+              height: 120px
+
+            &-center
+
+              .slider--item-image
+                width: 240px
+                height: 240px
+
+        .slider--next,
+        .slider--prev
+          top: 130px
+
+  @media (max-width: 767px)
+
+    .work
+
+      &--lockup
+
+        .slider
+          width: 75%
+
+          &--item
+
+            &-image
+              width: 90px
+              height: 90px
+
+            &-center
+
+              .slider--item-image
+                width: 190px
+                height: 190px
+
+        .slider--next,
+        .slider--prev
+          top: 105px
+
+  @media (max-width: 600px)
+
+    .work
+
+      &--lockup
+
+        .slider
+          width: auto
+
+          &--item
+
+            &-left,
+            &-right
+              display: none
+
+.about
+  h2
+    font-size: 82px
+    color: #ffffff
+    font-weight: 900
+    line-height: 1
+  a
+    font-size: 14px
+    color: #ffffff
+    text-transform: uppercase
+    font-weight: bold
+    text-decoration: none
+    display: inline-block
+    margin-top: 20px
+  
+    i
+      position: absolute
+      bottom: 0
+      left: 80px
+      font-size: 20px
+  img
+    transform: translateY(-7%)
+    position: absolute
+  span
+      position: absolute
+      bottom: -5px
+      margin-left: 20px
+  .link-block
+    height: 81px
+    width: 158px
+    border: 11px solid #0f33ff
+    margin-right: 30px
+    margin-top: 50px
+    overflow: hidden
+    position: relative
+    
+    img
+      width: 100%
+
+  
+.contact
+  height: 100%  
+  background-image: url(../images/contact-bcg.png)
+  background-size: cover
+  background-position: 0 -130px
+  &--form
+    max-width: 305px
+    height: 365px
+    background-color: #0b0b0b
+    position: relative
+    top: 130px
+    left: 175px
+    text-align: center
+    padding: 30px
+    p
+      font-size: 14px
+      color: #ffffff
+      font-weight: 700
+    .contact-btn
+      outline: none
+      border: none
+      width: 130px
+      height: 40px
+      margin-top: 25px
+      color: #ffffff
+    .behance
+      background-color: #1769ff
+    .dribble
+      background-color: #ea4c89
+    .contact-us
+      background-color: #0f33ff
+
+.section-hire_us
+  &__direction
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: center
+    margin: 40px
+    color: #ffffff
+    font-size: 18px
+
+.form
+  &--request
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    
+     
+.input
+  &--transparent
+    margin: 40px 25px
+    width: 310px
+    display: block
+    border: none
+    padding: 10px 0
+    border-bottom: 1px solid #fff
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1)
+    background-color: transparent
+    background-position: -200px 0
+    background-size: 200px 100%
+    background-repeat: no-repeat
+    color: #ffffff
+    &:focus, &:valid
+      box-shadow: none
+      outline: none
+      background-position: 0 0
+    // width: 310px
+    // height: 50px
+    // border: none
+    // outline: none
+    // background-color: transparent
+    // border-bottom: 1px solid #fff
+    // margin-bottom: 30px
+    // margin-right: 30px
+    &::-webkit-input-placeholder
+      font-family: 'roboto', sans-serif
+      -webkit-transition: all 0.3s ease-in-out
+      transition: all 0.3s ease-in-out
+    &:focus::-webkit-input-placeholder, &:valid::-webkit-input-placeholder
+      color: #cccccc
+      font-size: 11px
+      -webkit-transform: translateY(-20px)
+      transform: translateY(-20px)
+      visibility: visible !important
+  
