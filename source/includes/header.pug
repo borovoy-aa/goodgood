@@ -1,11 +1,58 @@
+header.header
+  .container
+    .row
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light
+          a.navbar-brand(href='#')
+            img.align-self(src="../images/header-logo.png", alt="logo")
+            h3 My Logo
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.mx-auto
 
-header.header#header
-  .container-fluid
-    .header-block
-      .header-logo
-        img(src="../images/header-logo.png", alt="logo")
-      .header--nav-toggle
-        span
+              li.nav-item
+                a.nav-link(href='#') Home
+              li.nav-item
+                a.nav-link(href='#') Portfolio
+              li.nav-item
+                a.nav-link(href='#') About
+              li.nav-item
+                a.nav-link(href='#') Contact
+              button.button.button--orange Blog
 
+            #wrap
+              form(action='', autocomplete='on')
+                input#search(name='search', type='text', placeholder="Search")
+                input#search_submit(value='Rechercher', type='submit')
 
-.header-sub
+            //- form.form-inline.my-2.my-lg-0
+            //-   input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
+            //-   button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+
+      //- .col-3.flex-block
+      //-   img.align-self(src="../images/header-logo.png", alt="logo")
+      //-   h3 My Logo
+      //- .col-6.flex-block
+      //-   nav.header.header__nav
+      //-     nav.wrapper
+      //-       input#menu-toggle(type='checkbox')
+      //-       label.label-toggle(for='menu-toggle')
+      //-       ul
+      //-         li
+      //-           a(href="")
+      //-             | Home
+      //-         li
+      //-           a(href="")
+      //-             | Portfolio
+      //-         li
+      //-           a(href="")
+      //-             | About
+      //-         li
+      //-           a(href="")
+      //-             | Contact
+
+      //- .col-3.flex-block
+      //-   button.button.button--orange.align-self
+      //-     | Blog
+      //-   p Search
+      //-   button.button.button--circle.align-self
