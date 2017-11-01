@@ -76,6 +76,9 @@ $blue: #12a3d6
     font-size: 18px
     text-transform: uppercase
 
+   
+    
+   
 .align-self
   align-self: center
 
@@ -294,3 +297,128 @@ input
   &__info
     font-size: 11px
     color: #515862
+
+.test-elements
+  &__tab
+    justify-content: center
+  &__list
+    padding: 10px
+    .button
+      &::after
+        content: ""
+        width: 66px
+        height: 6px
+        position: absolute
+        background-color: #c1c1c1
+        bottom: -17px
+        left: 0
+    .active
+      &::before
+        content: ""
+        background-image: url(../images/before-el.png)
+        width: 10px
+        height: 5px
+        position: absolute
+        bottom: -11px
+        left: 29px
+      &::after
+        content: ""
+        width: 66px
+        height: 6px
+        position: absolute
+        background-color: $orange
+        bottom: -17px
+        left: 0
+
+    &--female
+      .button
+        position: relative
+        background-image: url(../images/female.png)
+        height: 66px
+        width: 66px
+        border-radius: 66px
+        outline: none
+        
+      .active
+        background-image: url(../images/female-active.png)
+        height: 66px
+        width: 66px
+        border-radius: 66px
+        outline: none
+    &--male
+      .button
+        position: relative
+        background-image: url(../images/male.png)
+        height: 66px
+        width: 66px
+        border-radius: 66px
+        outline: none
+        
+      .active
+        background-image: url(../images/male-active.png)
+        height: 66px
+        width: 66px
+        border-radius: 66px
+        outline: none
+
+.test-content
+  text-align: center
+  padding: 30px
+  &__subtitle
+    font-size: 27px
+    color: $blue
+    text-transform: uppercase
+  &__info
+    font-size: 25px
+    color: #515862
+    padding-top: 20px
+  &__name-position
+    color: $orange
+    padding-top: 40px
+
+.footer
+  background-color: #2e3e4f
+  padding: 30px 0 30px 0
+  .footer-block
+    hr
+      background-color: #a3afb2
+    h2
+      font-size: 30px
+      color: $orange
+      text-transform: uppercase
+    p
+      margin-bottom: 0px
+      color: #a3afb2
+      font-size: 12px
+    a
+      color: $blue
+      font-size: 12px
+  .newslatter-block
+    line-height: 20px
+    &__form
+      color: $blue
+      input
+        width: 100%
+        height: 27px
+        border-radius: 5px
+        border: none
+        outline: none
+        padding: 10px
+      button
+        float: right
+  .recent-subblock
+    img
+      float: left
+      padding: 0px 10px 0 0
+  .contact-subblock
+    padding-bottom: 30px
+    img
+      float: left
+      padding: 0px 10px 0 0
+
+  .contact-subblock:last-child 
+    img
+      padding: 6px 10px 0 0
+
+.blue-button-margin
+  margin: 10px 0 0 0

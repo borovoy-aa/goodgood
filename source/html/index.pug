@@ -138,24 +138,40 @@ block content
                 h4.offers-items__subtitle Social Media
                 p.offers-items__info Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto ut veniam quasi, ex blanditiis quae natus laudantium tenetur quis qui ad sint accusamus atque aliquid!
 
-  section.section.section-testimonials
+  section.section.section-test
     .container
       .row.justify-content-center
-        .col
-          .testimonials-header
-            h2 testimonials
-            p "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis consequatur tempore nemo eum voluptas vel cumque deleniti dolorum, quasi inventore!"
-      .row.justify-content-center
-        .col
-          .owl-carousel.owl-theme
-            .item
-              h4 1
-            .item
-              h4 2
-            .item
-              h4 3
+        .col 
+          .test-elements
+            .tab-content
+              #home.tab-pane.fade.in.active.show.test-content
+                h3.test-content__subtitle Testimonials
+                p.test-content__info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                p.test-content__name-position 
+                  b Jon Doe 
+                  | / Ceo of Lorem
+              #menu1.tab-pane.fade.test-content
+                h3.test-content__subtitle Testimonials
+                p.test-content__info Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                p.test-content__name-position 
+                  b Kek Doe 
+                  | / Ceo of Lorem
+              #menu2.tab-pane.fade.test-content
+                h3.test-content__subtitle Testimonials
+                p.test-content__info Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                p.test-content__name-position 
+                  b Shpek Doe 
+                  | / Ceo of Lorem
 
+            ul.nav.nav-tabs.test-elements__tab
+              li.test-elements__list.test-elements__list--female
+                button.active.button(data-toggle='tab', href='#home')
+              li.test-elements__list.test-elements__list--male
+                button.button(data-toggle='tab', href='#menu1')
+              li.test-elements__list.test-elements__list--female
+                button.button(data-toggle='tab', href='#menu2')
       
+  
 
           
 
